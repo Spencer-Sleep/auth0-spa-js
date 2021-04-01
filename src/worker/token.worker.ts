@@ -27,7 +27,7 @@ const messageHandler = async ({
   let json: {
     refresh_token?: string;
   };
-
+  debugger
   const { audience, scope } = auth || {};
 
   try {

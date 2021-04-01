@@ -910,6 +910,8 @@ export default class Auth0Client {
       })
     );
 
+    debugger
+
     // If you don't have a refresh token in memory
     // and you don't have a refresh token in web worker memory
     // fallback to an iframe.
@@ -923,7 +925,7 @@ export default class Auth0Client {
       window.location.origin;
 
     let tokenResult: TokenEndpointResponse;
-
+    debugger
     const {
       scope,
       audience,
@@ -969,7 +971,7 @@ export default class Auth0Client {
 
       throw e;
     }
-
+    debugger
     const decodedToken = this._verifyIdToken(tokenResult.id_token);
 
     return {
